@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--上半区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <!--景区景点1-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:focusable="false"
+                android:id="@+id/spot_img1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/spot_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="景点介绍" />
+        </LinearLayout>
+
+        <!--中间分界线-->
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lianjie2" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="#DBDBDB" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lianjie" />
+        </FrameLayout>
+
+        <!--景区景点2-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:focusable="false"
+                android:id="@+id/spot_img2"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/sopt_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="景区介绍" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--下半区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <!--景区景点3-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:focusable="false"
+                android:id="@+id/spot_img3"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/spot_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="景区介绍" />
+        </LinearLayout>
+
+        <!--中间分界线-->
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lianjie2" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="#DBDBDB" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/lianjie" />
+        </FrameLayout>
+
+        <!--景区景点4-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:focusable="false"
+                android:id="@+id/spot_img4"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/spot_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="景点介绍" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

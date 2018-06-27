@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/addtravel_back"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="创建旅行队伍"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <notworry.rj.edu.notworry.Utils.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lunbo_image1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="队伍名称"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:id="@+id/addtravel_name"
+            android:hint="你的旅行队伍名称"
+            android:background="@null"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="目的地"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:id="@+id/addtravel_destination"
+            android:hint="你想去的地方"
+            android:background="@null"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="出发时间"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:id="@+id/addtravel_date"
+            android:hint="计划出发时间"
+            android:background="@null"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="游玩天数"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:id="@+id/addtravel_days"
+            android:hint="在目的地停留几天"
+            android:background="@null"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="预计游玩景点"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:id="@+id/addtravel_spot"
+            android:hint="好玩的景点"
+            android:background="@null"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/addtravel_submit"
+        android:background="#F0F0F0"
+        android:textSize="17dp"
+        android:text="完成"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>

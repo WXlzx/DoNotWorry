@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "notworry.rj.edu.notworry"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+apply plugin: 'com.jakewharton.butterknife'
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    //轮播图
+    compile 'com.youth.banner:banner:1.4.10'
+    //下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+    //没有使用特殊Header，可以不加这行
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //悬浮按钮
+    compile 'com.android.support:design:27.1.0'
+    compile 'com.android.support:recyclerview-v7:27.1.0'
+    //CardView是在安卓5.0提出的卡片式控件
+    compile 'com.android.support:cardview-v7:27.1.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/gradle-wrapper.jar')
+    implementation files('libs/json-lib-2.1-jdk15.jar')
+    implementation files('libs/mysql-connector-java-5.1.46.jar')
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.6.1'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+}

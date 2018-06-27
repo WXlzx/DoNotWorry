@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F0F0F0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/addgroup_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="创建组团队伍"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <notworry.rj.edu.notworry.Utils.CircleImageView
+            android:id="@+id/group_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lunbo_image1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="队伍名称"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/addgroup_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="您的组团队伍名称"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#F0F0F0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="队伍介绍"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/addgroup_intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:hint="介绍"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#F0F0F0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="目前总人数"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/addgroup_realnum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="0"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F0F0F0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="所需人数"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/addgroup_neednum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="队伍人数上限"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/addgroup_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F0F0F0"
+        android:text="完成"
+        android:textSize="17dp" />
+
+
+</LinearLayout>

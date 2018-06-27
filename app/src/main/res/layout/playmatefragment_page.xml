@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--搜索栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F0F0F0">
+
+        <ImageView
+            android:id="@+id/im_addgroup"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/add" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_edittext_selector"
+                android:hint="创建人/学校/目的地/景点"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/search2" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/lv_playmates"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+        </ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

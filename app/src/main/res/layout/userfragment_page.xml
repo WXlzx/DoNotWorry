@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/beijing"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <notworry.rj.edu.notworry.Utils.CircleImageView
+                    android:id="@+id/user_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:text="二傻子"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/beijing" />
+
+                    <TextView
+                        android:id="@+id/realname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小傻子"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15px"
+        android:background="#EAEAEE" />
+    <!--<View-->
+    <!--android:layout_width="1dip"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#66CCFF"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/underline"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/information" />
+
+                <LinearLayout
+                    android:id="@+id/information"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="个人信息" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/orders" />
+
+                <LinearLayout
+                    android:id="@+id/orders"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="我的订单" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/collection" />
+
+                <LinearLayout
+                    android:id="@+id/groups"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="我的队伍" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/setting" />
+
+                <LinearLayout
+                    android:id="@+id/setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="设置" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="#EAEAEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/information"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="我的信息" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/orders"  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="我的信息" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/collection"  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="我的信息" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/setting"  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="我的信息" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/jiantou" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

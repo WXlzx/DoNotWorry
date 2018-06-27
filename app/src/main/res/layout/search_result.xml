@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/spotImg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="22dp"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:text="名称"
+            android:textSize="23dp"
+            android:id="@+id/spotName"
+            android:layout_width="290dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:paddingLeft="30dp"
+            android:textSize="20dp"
+            android:text="地点"
+            android:id="@+id/spotPosition"
+            android:layout_width="290dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:textSize="20dp"
+            android:paddingLeft="30dp"
+            android:text="介绍"
+            android:id="@+id/spotIntor"
+            android:layout_width="290dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>

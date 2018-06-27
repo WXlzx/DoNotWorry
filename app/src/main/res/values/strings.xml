@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NotWorry</string>
+    <string name="login_success">login success</string>
+    <string name="login">登陆：</string>
+    <string name="Username">用户名：</string>
+    <string name="Password">密码</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">确认密码：</string>
+    <string name="next">NEXT</string>
+    <string name="register">注册：</string>
+    <string name="verification">验证码：</string>
+    <string name="phone">手机号：</string>
+    <string name="num">获取验证码</string>
+    <string name="SMS">短信登陆</string>
+</resources>
